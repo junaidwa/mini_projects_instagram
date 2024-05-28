@@ -1,0 +1,32 @@
+:root{
+    --clr-btn-bg: linear-gradient (81.02deg,
+    rgb(250,85,96) -23.47%,
+    rgb(177,75,244) 45.52%,
+    rgb(77,145,255) 114.8%
+    );
+    --clr-btn-hover-bg: linear-gradient(60deg,
+    rgb(250,85,96) -10%,
+    rgb(177,75,244) 25%,
+    rgb(77,145,255) 90%   );
+    --clr-btn-txt: #fff;
+
+}
+.btn{
+    padding: 10px 40px;
+    border-radius: 1rem;
+    background-color: var(--clr-btn-bg);
+    color: var(--clr-btn-txt);
+    cursor: pointer;
+    display: inline-flex;
+
+
+}
+.btn:hover{
+    background-color: var(--clr-btn-hover-bg);
+}
+.btn .btn-icon i{
+    transition: all .75s ease;
+}
+.btn:hover .btn-icon i{
+    transform: translate(10px);
+}
