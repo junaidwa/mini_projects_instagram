@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gainsboro;
+}
+
+.container {
+    height: auto;
+    width: auto;
+    border: 4px solid purple;
+}
+
+h2 {
+    position: relative;
+    font-size: 10vw;
+    color: black;
+    -webkit-text-stroke: 0.2vw pink;
+}
+
+h2::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    color: greenyellow;
+    -webkit-text-stroke: 0vw pink;
+    border-right: 4px solid greenyellow;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+
+@keyframes animate {
+    0%, 10%, 100% {
+        width: 0;
+    }
+    70%, 90% {
+        width: 100%;
+    }
+}
