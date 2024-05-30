@@ -1,0 +1,25 @@
+:root{
+    --background: #3C343D;
+    --background-card:#68626C;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--background);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+.gallery{
+    display: flex;
+    left: calc(50% -19rem);
+
+}
+.card img{
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 0.25rem;
+}
