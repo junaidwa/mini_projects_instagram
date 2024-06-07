@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: slategray;
+}
+.container{
+    display: flex;
+   
+}
+.container .static_text{
+    font-size: 40px;
+    color: white;
+    font-weight: 500;
+    line-height: 90px;
+    
+    
+    
+
+}
+
+
+.container li{
+    list-style-type: none;
+
+    font-size: 40px;
+    color: red;
+    position: relative;
+    font-weight: 200;
+    top: 0;
+    position: relative;
+    animation: slide 12s steps(4) infinite;
+ 
+}
+@keyframes slide{
+    
+    100% {
+        top: -360px;
+    }
+    
+    
+}
+.container .dynamic_text{
+
+    margin-left: 10px;
+    line-height: 90px;
+    height: 90px;
+    overflow: hidden;
+  
+}
+.container li::after{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background-color: slategray;
+    border-left: 2px solid red;
+    animation: typing 3s steps(10) infinite;
+}
+@keyframes typing{
+    40%,60%{
+        left: calc(100% + 30px);
+
+    }
+    100%{
+        left: 0;
+    }
+    
+}
