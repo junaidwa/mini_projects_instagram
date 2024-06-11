@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     background-color: black;
+}
+video{
+    border-radius: 20px;
+    border: 3px solid red;
+}
+.add{
+    position: relative;
+}
+#forward {
+    position: absolute;
+    top: 80%;
+    left: 40%;
+    background-color: transparent;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 16px;
+ 
+
+}
+#backward {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    color: white;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 16px;
+
+}

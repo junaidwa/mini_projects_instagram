@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video with button</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-5.12.1-web/css/all.min.css">
+</head>
+<body>
+    <div class="add">
+    <video id="vid" class="vid" src="video.webm" controls width="500px" height="300px">
+    </video>
+        <button id="backward" onclick="forwa()">
+            <i class="fa fa-fast-backward" aria-hidden="true"></i>
+        </button>
+        <button id="forward" onclick="back()">
+            <i class="fa fa-fast-forward" aria-hidden="true"></i>
+        </button>
+    </div>
+
+    <script>
+        var video1=document.getElementById("vid");
+
+     
+        function forwa(){
+            video1.currentTime +=10;
+        }
+        function back(){
+            video1.currentTime -=10;
+        }
+
+    </script>
+</body>
+</html>

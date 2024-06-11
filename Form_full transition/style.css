@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  height: 100vh;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.container{
+    height: 31px;
+    width: 350px;
+    position: relative;
+   
+}
+ .container .result{
+    height: 968%;
+    width: 100%;
+    /* position: absolute; */
+    background-color: yellow;
+    border: 2px solid red;
+    z-index: 1;
+    display: none;
+}
+.container .sikander{
+    display: block;
+    height: 968%;
+    width: 100%;
+    position: absolute;
+    background-color: yellow;
+    border: 2px solid red;
+    z-index: 1;
+   
+}
+
+.box-content{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.9s;
+}
+ .junaid .box-content{
+    transform: rotateY(180deg);
+ }
+
+.box-content .sign_in ,.log_in { 
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  height: 300px;
+  width: 350px;
+  border: 2px solid black;
+  background-color: rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: absolute;
+  backface-visibility: hidden;
+  
+}
+.box-content .log_in{
+   transform: rotateY(180deg);
+}
+.sign_in form button{
+    margin-top: 10px;
+}
+.sign_in input{
+    margin-top: 5px;
+}
+.box-content .gologin {
+  margin-left: 42%;
+}
+.sign_in .sign_btn{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.log_in form button{
+    margin-top: 10px;
+}
+.log_in input{
+    margin-top: 5px;
+}
+.box-content .gosignin {
+  margin-left: 42%;
+}
+.log_in .log_btn{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+

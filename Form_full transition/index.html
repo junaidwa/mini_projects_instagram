@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="result">
+            <p class="usern">Username :<span></span></p>
+            <p class="mail">Gmail :<span></span></p>
+            <p class="add">Address :<span></span></p>
+            <p class="pass">Password :<span></span></p>
+        </div>
+        <div class="box-content">
+            <div class="sign_in">
+                <form >
+                    <h1>Sign in Form</h1>
+                    <br>
+                    <br>
+                    <label>Username</label>
+                    <input type="text" id="username" placeholder="Username" required>
+                    <br>
+                    <label>Gmail</label>
+                    <input type="text" id="gmail" placeholder="Gmail" required>
+                    <br>
+                    <label>Address</label>
+                    <input type="text" id="address" placeholder="Address" required>
+                    <br>
+                    <label>Password</label>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <br>
+                    <button class="ssubmit">Submit</button>
+                </form>
+                <div class="sign_btn">
+                    <button class="sthis" >Sign in</button>
+                <button class="gologin" onclick="login()">Login</button>
+                
+            </div>
+            </div>
+            <div class="log_in">
+                <form >
+                    <h1>Log in Form</h1>
+                    <br>
+                    <br>
+                  
+                    <label>Gmail</label>
+                    <input type="text" id="gmail" placeholder="Gmail" required>
+                    <br>
+                    <br>
+                    <br>
+                    <label>Password</label>
+                    <input type="password" id="password" placeholder="Password" required>
+                  
+                    <br>
+
+                    <button class="lsubmit">Submit</button>
+                </form>
+               
+                <div class="loginbtn">
+                    <button class="thislogin">Login</button>
+                <button class="gosignin" onclick="sign()">Sign in</button>
+            </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        let cont=document.querySelector(".container");
+        let mainbox= document.querySelector(".box-content");
+        let glogin=document.querySelector(".gologin");
+        let signinform= document.querySelector(".sign_in form");
+        let loginform=document.querySelector("log_in");
+        let gsignin=document.querySelector("gosignin");
+        let finalresult=document.querySelector(".result");
+
+        function login(){
+            cont.classList.add("junaid");
+                  
+        }
+        function sign(){
+            cont.classList.remove("junaid"); 
+        }
+        // finalresult.classList.add("aqib");
+        signinform.addEventListener("submit", function(event){
+            let inputuser=document.getElementById("username").value;
+            let inputgmail=document.getElementById("gmail").value;
+            let inputadd=document.getElementById("address").value;
+            let inputpass=document.getElementById("password").value;
+            let resultuser= document.querySelector(".usern span");
+            let resultgmail=document.querySelector(".mail span");
+            let resultadd=document.querySelector(".add span");
+            let resultpass=document.querySelector(".pass span");
+            resultuser.textContent=inputuser;
+            resultgmail.textContent=inputgmail;
+            resultadd.textContent=inputadd;
+            resultpass.textContent=inputpass;
+            
+
+            finalresult.classList.add("sikander");
+            
+       
+        });
+
+
+    </script>
+    
+</body>
+</html>
