@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automatic image change</title>
+    <style>
+        h1{
+            color: black;
+            font-size: 30px;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Random Image</h1>
+    <div class="images" id="images">
+        <img src="images/image-1.jpeg"  alt="">
+        
+    </div>
+
+    <script>
+        const img= document.querySelector("#images img");
+        let images =['images/image-1.jpeg','images/image-2.jpeg','images/image-3.jpeg','images/image-4.jpeg','images/image-5.jpeg'];
+        setInterval(function(){
+             let ran = Math.floor(Math.random()*images.length);
+             img.src=images[ran];
+        },3000)
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,43 @@
+ .container {
+  display: inline-block;
+}
+
+.text {
+  font-size: 5rem;
+  letter-spacing: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  border-right: 5px solid black;
+  width: 23ch; /* Adjust to match the number of characters */
+  white-space: nowrap;
+  overflow: hidden;
+  animation: 
+    typing 4s steps(23) 1s forwards, /* Typing animation */
+    deleting 4s steps(23) 6s forwards, /* Deleting animation */
+    cursor 0.75s step-end infinite; /* Cursor blink animation */
+  animation-iteration-count: infinite;
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 23ch; /* Adjust to match the number of characters */
+  }
+}
+
+@keyframes deleting {
+  from {
+    width: 23ch; /* Adjust to match the number of characters */
+  }
+  to {
+    width: 0;
+  }
+}
+

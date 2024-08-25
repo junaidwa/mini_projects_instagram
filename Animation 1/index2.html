@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 animation</title>
+</head>
+<body>
+    <h2>I'm  <span></span></h2>
+    
+
+
+
+    <style>
+        span::before{
+            content: '';
+            animation: animate infinite 8s;
+        }
+        @keyframes animate {
+            0%{
+                content: 'Freelancer';
+            }
+            20%{
+                content: 'Web Developer';
+            }
+            40%{
+                content: 'Grphice Desigher';
+            }
+            60%{
+                content: 'Junaid';
+            }
+            80%{
+                content: 'Nouman';
+            }
+            100%{
+                content: 'Rehan Riaz';
+            }
+        }
+    </style>
+</body>
+</html>
